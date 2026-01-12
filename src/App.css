@@ -27,10 +27,41 @@
     border-radius: 1000px;
 }
 
-.ed-followCard-button {
+.tw-followCard-Button {
+    cursor: pointer;
     margin-left: 16px;
     border: 0;
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
+    transition: .3s base background-color;
+}
+
+.tw-followCard-Button:hover {
+   opacity: .8;
+}
+
+.is-following{
+    border: 1px solid #bbb;
+    background-color: transparent;
+    color: #fff;
+    width: 140px;
+}
+
+.is-following:hover{
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+}
+
+.is-following:hover .tw-followcard-following {
+    display: none;
+}
+
+.is-following:hover .tw-followcard-unFollow{
+    display: block;
+}
+
+.tw-followcard-unFollow{
+    display: none;
 }
